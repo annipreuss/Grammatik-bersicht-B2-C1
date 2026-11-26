@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scorm.js" defer></script>
+    <script src="aufgabenkarussell.js" defer></script>
+    <script src="aufgaben_adverbialsaetze.js" defer></script>
+
+    <title>Aufgaben zu Adverbialsätzen</title>
+</head>
+<body>
+    <div class="seitenkarte">
+        <main>
+            <div class="aufgabenkarussell" data-aufgabenkarussell>
+                <header>
+                    <h1>Aufgaben zu Adverbialsätzen</h1>
+                </header>
+
+                <div class="buttonfuerlinks">
+                    <a href="adverbialsaetze.html"
+                       class="linkbutton"
+                       data-scorm-ziel="ERKLAERUNG">
+                        Zurück zur Grammatikerklärung
+                    </a>
+                </div>
+
+                <div class="aufgabennavigation">
+                    <button type="button" data-aufgabenrichtung="-1"
+                            aria-label="Vorherige Aufgabe">
+                        ← Zurück
+                    </button>
+
+                    <span class="aufgabenstand" data-aufgabenstand></span>
+
+                    <button type="button" data-aufgabenrichtung="1"
+                            aria-label="Nächste Aufgabe">
+                        Weiter →
+                    </button>
+                </div>
+
+                <div data-aufgabenkarten>
+
+				<!-- Aufgabe 1 -->
+				<section class="aufgabenkarte" id="C1_1">
+					<h2>Kausale und konzessive Nebensätze (2)</h2>
+
+					<p><em>Verbinden Sie die Sätze mit dem konzessiven Konnektor.</em></p>
+
+					<ol class="lueckentext">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Wir haben lange im Stau gestanden. Wir haben die Fähre
+						noch erreicht. (obwohl)<br>
+						<u>Obwohl wir lange im Stau gestanden haben</u>, haben wir die Fähre noch erreicht.
+					</p>
+					
+						<li>
+							Wir haben lange im Stau gestanden. Wir haben die Fähre noch erreicht. (obwohl)<br>
+							<input type="text" data-loesung="Obwohl wir lange im Stau gestanden haben">,
+							haben wir die Fähre noch erreicht.
+						</li>
+						<li>
+							Wir haben das Ferienhaus zwei Wochen vorher fest gebucht.
+							Es war nicht für uns vorbereitet. (obschon)<br>
+							<input type="text" data-loesung="Obschon wir das Ferienhaus zwei Wochen vorher fest gebucht haben">,
+							war es nicht für uns vorbereitet.
+						</li>
+						<li>
+							Wir hatten viel Ärger mit der Agentur. Wir hatten gute Laune. (auch wenn)<br>
+							<input type="text" data-loesung="Auch wenn wir viel Ärger mit der Agentur hatten">,
+							hatten wir gute Laune.
+						</li>
+						<li>
+							Der Ferienort ist sehr teuer. Wir haben nicht auf das Geld geschaut und
+							sind gut essen gegangen. (obzwar)<br>
+							<input type="text" data-loesung="Obzwar der Ferienort sehr teuer ist">,
+							haben wir nicht auf das Geld geschaut und sind gut essen gegangen.
+						</li>
+						<li>
+							Wir könnten noch eine Woche Urlaub von der Firma bekommen. Wir könnten
+							keine Reise machen, weil wir unser Urlaubsgeld ausgegeben haben. (selbst wenn)<br>
+							<input type="text" data-loesung="Selbst wenn wir noch eine Woche Urlaub von der Firma bekommen könnten">,
+							könnten wir keine Reise machen, weil wir unser Urlaubsgeld ausgegeben haben.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 2 -->
+				<section class="aufgabenkarte" id="C1_2" hidden>
+					<h2>Konditionale Nebensätze </h2>
+
+					<p>
+						<em>a) Schreiben Sie Konditionalsätze mit den Konjunktionen in der Klammer.<br>
+						b) Formulieren Sie die Sätze aus Teil a dann als uneingeleitete Konditionalsätze.</em>
+					</p>
+
+					<ol class="lueckentext" start="2">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Man hat kein Sicherheitsprogramm auf dem Computer.
+						Der Computer kann leicht von Schadsoftware angegriffen werden. (wenn)<br>
+						a) <u>Wenn man kein Sicherheitsprogramm auf dem Computer hat</u>,
+						kann der Computer leicht von Schadsoftware angegriffen werden.<br>
+						b) <u>Sollte man kein Sicherheitsprogramm auf dem Computer haben</u>,
+						dann kann der Computer leicht von Schadsoftware angegriffen werden.
+					</p>
+					
+						<li>
+							Man schützt seine Passwörter nicht gut. Kriminelle können persönliche
+							Daten ausspähen. (falls)<br>
+							a) <input type="text" data-loesung="Falls man seine Passwörter nicht gut schützt">,
+							können Kriminelle persönliche Daten ausspähen.<br>
+							b) <input type="text" data-loesung="Sollte man seine Passwörter nicht gut schützen|Schützt man seine Passwörter nicht gut">,
+							dann können Kriminelle persönliche Daten ausspähen.
+						</li>
+						<li>
+							Man hat einen Computervirus auf dem Computer.
+							Man muss ein Antivirenprogramm einsetzen. (gesetzt den Fall, dass)<br>
+							a) <input type="text" data-loesung="Gesetzt den Fall, dass man einen Computervirus auf dem Computer hat">,
+							muss man ein Antivirenprogramm einsetzen.<br>
+							b) <input type="text" data-loesung="Sollte man einen Computervirus auf dem Computer haben|Hat man einen Computervirus auf dem Computer">,
+							dann muss man ein Antivirenprogramm einsetzen.
+						</li>
+						<li>
+							Man hat ein Antivirenprogramm auf dem Computer installiert.
+							Man hat keine hundertprozentige Sicherheit. (selbst wenn)<br>
+							a) <input type="text" data-loesung="Selbst wenn man ein Antivirenprogramm auf dem Computer installiert hat">,
+							hat man keine hundertprozentige Sicherheit.<br>
+							b) <input type="text" data-loesung="Hat man ein Antivirenprogramm auf dem Computer installiert|Hat man ein Antivirusprogramm auf dem Computer installiert">,
+							hat man selbst dann keine hundertprozentige Sicherheit.
+						</li>
+						<li>
+							Man lädt keine unbekannten Dateien und Programme auf den Computer.
+							Die Gefahr, dass der Computer von Schadsoftware befallen wird, ist geringer. (sofern)<br>
+							a) <input type="text" data-loesung="Sofern man keine unbekannten Dateien und Programme auf den Computer lädt">,
+							ist die Gefahr, dass der Computer von Schadsoftware befallen wird, geringer.<br>
+							b) <input type="text" data-loesung="Sollte man keine unbekannten Dateien und Programme auf den Computer laden|Lädt man keine unbekannten Dateien und Programme auf den Computer">,
+							dann ist die Gefahr, dass der Computer von Schadsoftware befallen wird, geringer.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 3 -->
+				<section class="aufgabenkarte" id="C1_3" hidden>
+					<h2>Konsekutive Nebensätze (3) </h2>
+
+					<p>
+						<em>Verbinden Sie die Sätze mit dem Nebensatzkonnektor in Klammern.
+						Achten Sie darauf, welcher Satz die Konsequenz nennt.</em>
+					</p>
+
+					<ol class="lueckentext" start="2">
+					
+
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Sehr viele Menschen essen viel Zucker.
+						Sie schaden ihrer Gesundheit. (dermaßen …, dass)<br>
+						Sehr viele Menschen essen <u>dermaßen</u> viel Zucker,
+						<u>dass sie ihrer Gesundheit schaden</u>.
+					</p>
+
+					
+						<li>
+							In vielen Fertigprodukten sind große Mengen von Zucker versteckt.
+							Wir merken es oft nicht, wenn wir Zucker zu uns nehmen. (sodass)<br>
+							In vielen Fertigprodukten sind große Mengen von Zucker versteckt,
+							<input type="text" data-loesung="sodass wir oft nicht merken, wenn wir Zucker zu uns nehmen|sodass wir es oft nicht merken, wenn wir Zucker zu uns nehmen">.
+						</li>
+						<li>
+							Die meisten Menschen mögen süße Nahrungsmittel.
+							Der süße Geschmack ist den Menschen angeboren. (weshalb)<br>
+							Der süße Geschmack ist den Menschen angeboren,
+							<input type="text" data-loesung="weshalb die meisten Menschen süße Nahrungsmittel mögen">.
+						</li>
+						<li>
+							Viele Menschen essen mehr Zucker, als für ihre Gesundheit gut ist.
+							Viele Menschen sind abhängig von süßen Nahrungsmitteln. (sodass)<br>
+							Viele Menschen sind abhängig von süßen Nahrungsmitteln,
+							<input type="text" data-loesung="sodass sie mehr Zucker essen, als für ihre Gesundheit gut ist">.
+						</li>
+						<li>
+							Wir essen gerne einen Schokoriegel oder trinken ein süßes Getränk,
+							wenn wir erschöpft sind. Der Zucker geht schnell ins Blut. (sodass)<br>
+							Der Zucker geht schnell ins Blut,
+							<input type="text" data-loesung="sodass wir gerne einen Schokoriegel essen oder ein süßes Getränk trinken, wenn wir erschöpft sind">.
+						</li>
+						<li>
+							Aber Zucker ist nicht nur schädlich, er enthält auch nützliche Stoffe.
+							Er kann für die Konservierung von Lebensmitteln oder sogar zur
+							Wundheilung eingesetzt werden. (weshalb)<br>
+							Aber Zucker ist nicht nur schädlich, er enthält auch nützliche Stoffe,
+							<input type="text" data-loesung="weshalb er für die Konservierung von Lebensmitteln oder sogar zur Wundheilung eingesetzt werden kann">.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 4 -->
+				<section class="aufgabenkarte" id="C1_4" hidden>
+					<h2>Modale Nebensätze (2) </h2>
+
+					<p><em>Formulieren Sie die Sätze um. Verwenden Sie <b>wodurch</b>.</em></p>
+
+					<ol class="lueckentext" start="2">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Er hat nach dem Studium mehrere Praktika gemacht.
+						Er hat erste Berufserfahrungen gewonnen.<br>
+						Er hat nach dem Studium mehrere Praktika gemacht,
+						<u>wodurch er erste Berufserfahrungen gewonnen hat</u>.
+					</p>
+
+					
+						<li>
+							Sie hat zusätzlich eine Fremdsprache gelernt.
+							Ihre Chancen auf dem Arbeitsmarkt haben sich verbessert.<br>
+							Sie hat zusätzlich eine Fremdsprache gelernt,
+							<input type="text" data-loesung="wodurch sich ihre Chancen auf dem Arbeitsmarkt verbessert haben|wodurch ihre Chancen auf dem Arbeitsmarkt sich verbessert haben">.
+						</li>
+						<li>
+							Sie hat einige Jahre in einer Zeitarbeitsfirma gearbeitet.
+							Sie hat viele unterschiedliche Firmen kennengelernt.<br>
+							Sie hat einige Jahre in einer Zeitarbeitsfirma gearbeitet,
+							<input type="text" data-loesung="wodurch sie viele unterschiedliche Firmen kennengelernt hat">.
+						</li>
+						<li>
+							Er hat an einem Kurs für Bewerbungstraining teilgenommen.
+							Sein Auftreten ist selbstbewusster und souveräner geworden.<br>
+							Er hat an einem Kurs für Bewerbungstraining teilgenommen,
+							<input type="text" data-loesung="wodurch sein Auftreten selbstbewusster und souveräner geworden ist">.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 5 -->
+				<section class="aufgabenkarte" id="C1_5" hidden>
+					<h2>Temporale Nebensätze (2) </h2>
+
+					<p><em>Ergänzen Sie den Konnektor.</em></p>
+					<p class="verbkasten">
+						als · bis · ehe · nachdem · seit · solange · sooft · während · sobald · bevor
+					</p>
+
+					<ol class="lueckentext" start="2">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> <u>Nachdem</u> der Wecker 5 Minuten lang geklingelt hat,
+						stehe ich auf.
+					</p>
+					
+						<li>
+							<input type="text" data-loesung="Bevor|Ehe">
+							ich frühstücke, bade ich.
+						</li>
+						<li>
+							<input type="text" data-loesung="Während">
+							das Badewasser läuft, mache ich mir Kaffee.
+						</li>
+						<li>
+							<input type="text" data-loesung="Sobald">
+							die Badewanne voll ist, setze ich mich ins Wasser und entspanne mich,
+							bis meine Kinder aufstehen.
+						</li>
+						<li>
+							<input type="text" data-loesung="Seit">
+							ich Kinder habe, stehe ich morgens immer früher auf, um noch ein bisschen
+							Ruhe zu haben, <input type="text" data-loesung="ehe|bevor"> sie wach werden.
+						</li>
+						<li>
+							<input type="text" data-loesung="Als">
+							ich noch kinderlos war, konnte ich fernsehen,
+							<input type="text" data-loesung="solange"> ich gefrühstückt habe,
+							aber <input type="text" data-loesung="sooft"> ich meine Kinder ansehe,
+							weiß ich, dass ich jetzt glücklicher bin.
+						</li>
+					</ol>
+				</section>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

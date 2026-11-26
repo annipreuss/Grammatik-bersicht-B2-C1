@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	<script src="scorm.js" defer></script>
+	<script src="erklaervideo.js" defer></script>
+    <title>Adverbialsätze</title>
+</head>
+<body>
+    <div class="seitenkarte">
+        <header>
+            <h1>Adverbialsätze</h1>
+        </header>
+
+        <main>
+          <div class="buttonfuerlinks">
+			<a href="index.html" class="linkbutton">
+			  ← Zur Grammatikübersicht
+			</a>
+
+			<a href="aufgaben_adverbialsaetzeb2.html" class="linkbutton" data-scorm-ziel="B2_1">
+			Aufgaben für B2
+			</a>
+
+			<a href="aufgaben_adverbialsaetzec1.html" class="linkbutton" data-scorm-ziel="C1_1">
+			Aufgaben für C1
+			</a>
+</div>
+		
+		<div class="erklaervideo">
+		<button class="videovorschau"
+				id="video-start"
+				type="button"
+				aria-label="Video starten">
+			<img src="./bilder/prototyp2.jpg" alt="">
+			<span class="play-symbol" aria-hidden="true">▶</span>
+		</button>
+		<img id="video-platzhalter"
+		class="video-gif"
+		data-src="./bilder/platzhalter.gif"
+		alt="Platzhalter für Video"
+		hidden>
+		</div>
+			
+		<div class="unterueberschrift">
+		<h1>Temporale Nebensätze</h1>
+		</div>
+		
+		<div class="erklaerung_mit_bild">
+		<div>
+		<p class="grammatikerklaerung"> Temporale Nebensätze zeigen, <b>wann</b>, <b>wie lange</b> oder <b>wie oft</b> etwas geschieht.</p></div>
+		<img src="./bilder/temporal.png" alt=""></div>
+		
+
+		<div class="satzanalyse-scroll">	
+		<table class="grammatiktabelle grammatiktabelle-adverbial">
+		  <thead>
+			<tr>
+			  <th><b>Konnektor</b></th>
+              <th><b>Erklärung</b></th>
+			  <th><b>Beispiel</b></th>
+			 </tr>
+		  </thead>
+
+		  <tbody>
+			<tr>
+              <td><b>während</b></td>
+              <td>zwei parallele Aktivitäten</td>
+			  <td><i><b>Während</b> ich koche, sieht mich meine Katze die ganze Zeit an.</i></td>
+			</tr>
+
+			<tr>
+              <td><b>nachdem</b></td>
+              <td>Reihenfolge: Aktion 1 – Aktion 2</td>
+			  <td><i><b>Nachdem</b> ich gekocht habe, esse ich und meine Katze bekommt Futter.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>bevor</b><br><b>ehe</b></td>
+              <td>Reihenfolge: Aktion 2 – Aktion 1</td>
+			  <td><i><b>Bevor / Ehe</b> ich eine Katze hatte, war ich beim Kochen allein und unbeobachtet.</i></td>
+			</tr>
+
+			<tr>
+              <td><b>bis</b></td>
+              <td>Ende einer Phase / Aktion</td>
+			  <td><i><b>Bis</b> das Essen fertig ist, verlässt die Katze die Küche nicht.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>seit(dem)</b></td>
+              <td>Beginn in der Vergangenheit, jetzt noch (meistens mit Präsens)</td>
+			  <td><i><b>Seitdem / Seit</b> ich eine Katze habe, habe ich beim Kochen Publikum.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>wenn</b></td>
+              <td>Routine / mehrmals passiert oder einmal passiert in Gegenwart oder Zukunft</td>
+			  <td><i><b>Wenn</b> ich koche, (dann)** kommt die Katze in die Küche und setzt sich neben den Herd.</i>
+			  <br><i><b>Wenn</b> ich früher gekocht habe, war ich unbeobachtet.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>als</b></td>
+              <td>einmal in der Vergangenheit passiert</td>
+			  <td><i><b>Als</b> ich gestern Fisch gekocht habe, war die Katze besonders aufgeregt.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>solange</b></td>
+              <td>zwei parallele Aktivitäten / Phasen bis zum Ende einer Aktion / Phase</td>
+			  <td><i><b>Solange</b> ich koche, bleibt die Katze neben mir sitzen.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>sobald</b><br><b>sowie</b></td>
+              <td>sofort wenn, Anfang einer Aktion</td>
+			  <td><i><b>Sobald / Sowie</b> ich esse, will die Katze auch ihr Futter haben.</i></td>
+			</tr>
+			
+			<tr>
+              <td><b>sooft</b></td>
+              <td>jedes Mal wenn, wiederholte Aktion</td>
+			  <td><i><b>Sooft</b> ich auch die Katze aus der Küche schicke, steht sie eine Minute später wieder am Herd.</i></td>
+			</tr>
+
+		  </tbody>
+		</table>
+		</div>
+		<p class="grammatikerklaerung">* Der nachdem-Satz muss immer in einer Zeitstufe vor dem Hauptsatz stehen.<br><br>
+		** Nach dem wenn-Satz kann der Hauptsatz mit einem dann beginnen. </p>
+
+<!-- Kausale Nebensätze -->
+<div class="unterueberschrift">
+    <h1>Kausale Nebensätze</h1>
+</div>
+
+<div class="erklaerung_mit_bild">
+    <div>
+        <p class="grammatikerklaerung">
+            <b>Warum geschieht etwas?</b><br>
+            Der Nebensatz nennt den Grund.
+        </p>
+    </div>
+    <img src="./bilder/kausal.png" alt="">
+</div>
+
+<div class="satzanalyse-scroll">
+    <table class="grammatiktabelle grammatiktabelle-adverbial">
+        <thead>
+            <tr>
+                <th><b>Konnektor</b></th>
+                <th><b>Erklärung</b></th>
+                <th><b>Beispiel</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>weil</b></td>
+                <td>Der weil-Satz steht meistens nach dem Hauptsatz.</td>
+                <td><i>Ich komme so spät, <b>weil</b> mein Bus eine Panne hatte.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>da</b></td>
+                <td>Der da-Satz steht meistens auf Position 1. Auf „Warum …?“ antwortet man nicht mit einem da-Satz.</td>
+                <td><i><b>Da</b> der öffentliche Nahverkehr so schlecht finanziert wird, wundert mich das nicht.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>zumal</b> <span class="c1-markierung">C1</span></td>
+                <td>Ein zusätzlicher Grund / ein Nachtrag*</td>
+                <td><i>…, <b>zumal</b> auch die Ausbildung der Fahrer immer schlechter geworden ist.</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="grammatikerklaerung">
+    * Im Kontext steht der zumal-Satz und der wobei-Satz manchmal alleine.
+</p>
+
+
+<div class="unterueberschrift">
+    <h1>Konzessive Nebensätze</h1>
+</div>
+
+<div class="erklaerung_mit_bild">
+    <div>
+        <p class="grammatikerklaerung">
+            <b>Trotz welcher Tatsache geschieht etwas?</b><br>
+            Der Nebensatz nennt einen Umstand, der eine andere Folge erwarten lässt.
+        </p>
+    </div>
+    <img src="./bilder/konzessiv.png" alt="">
+</div>
+
+<div class="satzanalyse-scroll">
+    <table class="grammatiktabelle grammatiktabelle-adverbial">
+        <thead>
+            <tr>
+                <th><b>Konnektor</b></th>
+                <th><b>Erklärung</b></th>
+                <th><b>Beispiel</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>obwohl</b></td>
+                <td>seltener auch, meist in der Schriftsprache: obschon, obzwar und obgleich</td>
+                <td><i><b>Obwohl</b> ich spät aufgestanden bin, habe ich meine S-Bahn noch bekommen.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>auch wenn</b> <span class="c1-markierung">C1</span></td>
+                <td></td>
+                <td><i><b>Auch wenn</b> du zu spät gekommen bist, hast du nichts Wichtiges verpasst.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>wobei</b> <span class="c1-markierung">C1</span></td>
+                <td>Der Konnektor wobei macht aus dem vorhergehenden Satz einen Gegengrund und nennt selbst ein neues, wichtiges Argument.* Häufiger in der gesprochenen Sprache.</td>
+                <td><i>(Du hast nichts Wichtiges verpasst), <b>wobei</b> Zuspätkommen aber natürlich immer einen schlechten Eindruck macht.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>ungeachtet dessen, dass</b> <span class="c1-markierung">C1</span></td>
+                <td>in der gehobenen Sprache auch: ungeachtet der Tatsache, dass …</td>
+                <td><i><b>Ungeachtet dessen, dass</b> die Chefin meist freundlich reagiert, würde ich in nächster Zeit vorsichtiger sein und pünktlich kommen.</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="grammatikerklaerung">
+    * Diese Nebensätze nennt man auch „weiterführende Nebensätze“. Sie können nicht vor dem Hauptsatz stehen.
+</p>
+
+
+<div class="unterueberschrift">
+    <h1>Konsekutive Nebensätze</h1>
+</div>
+
+<div class="erklaerung_mit_bild">
+    <div>
+        <p class="grammatikerklaerung">
+            <b>Welche Folge hat das?</b><br>
+            Zuerst steht die Situation im Hauptsatz. Der Nebensatz mit der Folge steht immer danach.
+        </p>
+    </div>
+    <img src="./bilder/konsekutiv.png" alt="">
+</div>
+
+<div class="satzanalyse-scroll">
+    <table class="grammatiktabelle grammatiktabelle-adverbial">
+        <thead>
+            <tr>
+                <th><b>Konnektor</b></th>
+                <th><b>Erklärung</b></th>
+                <th><b>Beispiel</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>sodass</b></td>
+                <td></td>
+                <td><i>Ich war spät, <b>sodass</b> ich den Bus verpasst habe.</i></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">
+                    <b>so … dass</b><br>
+                    <b>dermaßen …, dass</b><br>
+                    <b>derart …, dass</b>
+                </td>
+                <td>Das Wort „so“ vor dem Adjektiv wird betont gesprochen. Dadurch wird das Adjektiv hervorgehoben. Auch: dermaßen und derartig vor dem Adjektiv.</td>
+                <td>
+                    <i>Ich war <b>so</b> spät, <b>dass</b> ich den Bus verpasst habe.</i><br>
+                    <i>Ich war <b>dermaßen / derart</b> spät, <b>dass</b> ich den Bus verpasst habe.</i><br>
+                    <i>Ich hatte eine <b>derartige</b> Verspätung, <b>dass</b> ich den Bus verpasst habe.</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Wenn kein Adjektiv im Satz ist, steht das so / dermaßen / derartig beim Verb. Man versteht das Adjektiv aus dem Kontext.</td>
+                <td>
+                    <i>Ich bin <b>so / dermaßen</b> gerannt, <b>dass</b> ich ganz außer Atem war.</i><br>
+                    (Man versteht: <i>… so / dermaßen schnell gerannt, …</i>)
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>weshalb</b> <span class="c1-markierung">C1</span><br><b>weswegen</b> <span class="c1-markierung">C1</span></td>
+                <td>Weshalb und weswegen machen aus dem vorhergehenden Satz einen Grund für die folgende Aktion*. Sie können immer durch einen Hauptsatz mit deshalb / deswegen / darum ersetzt werden.</td>
+                <td><i>Ich war sehr spät, <b>weshalb / weswegen</b> ich auch den Bus verpasst habe.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>zu … als dass + Konjunktiv 2</b> <span class="c1-markierung">C1</span></td>
+                <td>Negative Konsequenz: „zu … als dass“ (+ Konjunktiv 2) nennt die positive Alternative, die nicht realisiert ist.</td>
+                <td><i>Ich war <b>zu</b> spät, <b>als dass</b> ich den Bus noch bekommen hätte.</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="satzbau-kasten">
+<p class="grammatikerklaerung">
+    <b><u>Grund und Folge unterscheiden</u></b><br>
+    <b>Grund</b> &nbsp; <i>Mira verpasste den Bus, <b>weil sie spät aufstand</b>.</i><br>
+    <b>Folge</b> &nbsp; <i>Mira stand spät auf, <b>sodass sie den Bus verpasste</b>.</i>
+</p>
+</div>
+
+
+<div class="unterueberschrift">
+    <h1>Konditionale Nebensätze</h1>
+</div>
+
+<div class="erklaerung_mit_bild">
+    <div>
+        <p class="grammatikerklaerung">
+            <b>Unter welcher Bedingung gilt etwas?</b><br>
+            Der Hauptsatz sagt, was in diesem Fall geschieht.
+        </p>
+    </div>
+    <img src="./bilder/konditional.png" alt="">
+</div>
+
+<div class="satzanalyse-scroll">
+    <table class="grammatiktabelle grammatiktabelle-adverbial">
+        <thead>
+            <tr>
+                <th><b>Konnektor</b></th>
+                <th><b>Erklärung</b></th>
+                <th><b>Beispiel</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>wenn</b><br><b>falls</b></td>
+                <td>
+                    = Unter der Bedingung, dass ich Zeit habe, komme ich zu dir.<br>
+                    Wenn kann auch temporal verstanden werden.<br>
+                    Der wenn-Satz steht häufig auf Position 1.<br>
+                    Falls hat nur konditionale Erklärung.
+                </td>
+                <td>
+                    <i><b>Wenn</b> ich Zeit habe, (dann) komme ich heute zu dir.</i><br>
+                    <i><b>Falls</b> ich Zeit habe, komme ich.</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>nur wenn</b><br><b>sogar wenn</b><br><b>außer wenn</b></td>
+                <td>
+                    Wenn kann mit vielen Wörtern kombiniert werden:<br>
+                    nur wenn = ausschließlich wenn<br>
+                    sogar wenn = Bedingung wird als etwas Besonderes hervorgehoben<br>
+                    selbst wenn, außer wenn …
+                </td>
+                <td>
+                    <i><b>Nur wenn</b> ich Zeit habe, komme ich.</i><br>
+                    <i>Ich komme, <b>sogar wenn</b> ich nur ganz wenig Zeit habe.</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>sofern</b> <span class="c1-markierung">C1</span><br><b>gesetzt den Fall, dass</b> <span class="c1-markierung">C1</span><br><b>vorausgesetzt, dass</b> <span class="c1-markierung">C1</span></td>
+                <td>Hauptsächlich in der gehobenen Sprache verwendet.</td>
+                <td>
+                    <i><b>Sofern</b> ich Zeit habe, komme ich.</i><br>
+                    <i><b>Gesetzt den Fall, dass</b> ich Zeit habe, komme ich.</i><br>
+                    <i><b>Vorausgesetzt, dass</b> ich Zeit habe, komme ich.</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>uneingeleiteter Konditionalsatz</b></td>
+                <td>Der uneingeleitete Konditionalsatz muss vor dem Hauptsatz stehen. Das Verb steht auf Position 1. Häufig mit sollte. In der gesprochenen Sprache selten verwendet.</td>
+                <td>
+                    <i><b>Komme</b> ich heute nicht mehr, rufe ich dich an.</i><br>
+                    <i><b>Sollte</b> ich Zeit haben, komme ich heute noch.</i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="unterueberschrift">
+    <h1>Adversative Nebensätze</h1>
+</div>
+
+<div class="erklaerung_mit_bild">
+    <div>
+        <p class="grammatikerklaerung">
+            <b>Worin liegt der Gegensatz?</b><br>
+            Zwei Aussagen werden einander gegenübergestellt.
+        </p>
+    </div>
+    <img src="./bilder/adversativ.png" alt="">
+</div>
+
+<div class="satzanalyse-scroll">
+    <table class="grammatiktabelle grammatiktabelle-adverbial">
+        <thead>
+            <tr>
+                <th><b>Konnektor</b></th>
+                <th><b>Erklärung</b></th>
+                <th><b>Beispiel</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>während</b></td>
+                <td>Manchmal kann während sowohl adversativ als auch temporal verstanden werden.</td>
+                <td><i><b>Während</b> ich immer das neueste Handy habe, benutzt du eine Antiquität.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>wohingegen</b></td>
+                <td>Wohingegen macht aus dem vorhergehenden Satz einen Gegensatz für die folgende Aktion*. Er kann immer durch einen Hauptsatz mit dagegen ersetzt werden.</td>
+                <td><i>Du gibst dauernd Geld für neue Handys aus, <b>wohingegen</b> ich mein Geld für meine Reisen spare.</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="grammatikerklaerung">
+    * Diese Nebensätze nennt man auch „weiterführende Nebensätze“. Sie können nicht vor dem Hauptsatz stehen.
+</p>
+
+<div class="unterueberschrift">
+    <h1>Modale Nebensätze</h1>
+</div>
+
+<div class="erklaerung_mit_bild">
+    <div>
+        <p class="grammatikerklaerung">
+            <b>Wie oder wodurch erreicht man etwas?</b><br>
+            Der Nebensatz beschreibt das Mittel oder die Methode.
+        </p>
+    </div>
+    <img src="./bilder/modal.png" alt="">
+</div>
+
+<div class="satzanalyse-scroll">
+    <table class="grammatiktabelle grammatiktabelle-adverbial">
+        <thead>
+            <tr>
+                <th><b>Konnektor</b></th>
+                <th><b>Erklärung</b></th>
+                <th><b>Beispiel</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>indem</b></td>
+                <td>Frage: Wie?</td>
+                <td><i>Sie können den Motorraum öffnen, <b>indem</b> Sie hier an dem Griff drehen.</i></td>
+            </tr>
+
+            <tr>
+                <td><b>dadurch dass</b></td>
+                <td>
+                    Frage: Wie? Wodurch?<br><br>
+                    Dadurch dass kann auch getrennt werden. Der Satzteil, vor dem dadurch steht, wird hervorgehoben und betont gesprochen.<br>
+                    Dadurch dass kann auch kausale Erklärung haben (Grund): <i>Sie hat viele Vorteile, dadurch dass sie sehr gut Deutsch spricht.</i> Sätze mit dadurch dass in kausaler Erklärung können nicht mit indem umgeformt werden.
+                </td>
+                <td>
+                    <i>Der Motorraum öffnet sich, <b>dadurch dass</b> Sie an dem Griff drehen.</i><br>
+                    <i>Ich kam <b>dadurch</b> noch pünktlich, <b>dass</b> mir der Autodienst geholfen hat.</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>wodurch</b> <span class="c1-markierung">C1</span></td>
+                <td>
+                    Wodurch macht aus dem vorhergehenden Satz (im Nachhinein) eine modale Information für die Aussage des folgenden Satzes.* Sätze mit wodurch können auch kausale Erklärung haben.<br>
+                    Nebensätze mit wodurch können durch einen Hauptsatz mit dadurch ersetzt werden.
+                </td>
+                <td><i>Ich drehte an dem Griff, <b>wodurch</b> sich der Motorraum öffnete.</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="grammatikerklaerung">
+    * Diese Nebensätze nennt man auch „weiterführende Nebensätze“. Sie können nicht vor dem Hauptsatz stehen.
+</p>
+
+<div class="satzbau-kasten">
+<div class="unterueberschrift">
+    <h1>Satzbau auf einen Blick</h1>
+</div>
+
+<p class="grammatikerklaerung">
+    Zwischen Haupt- und Nebensatz steht ein <b>Komma</b>.
+    Im eingeleiteten Nebensatz steht das konjugierte Verb in der Regel <b>am Ende</b>.<br>
+    <b>Beispiel:</b><br>
+    <i>Die Forscherin prüft das Ergebnis<b>,</b> indem sie die Messung <b>wiederholt</b>.</i>
+</p>
+
+<p class="grammatikerklaerung">
+    Steht der Nebensatz zuerst, folgt normalerweise direkt nach dem Komma das <b>konjugierte Verb des Hauptsatzes</b>. Ein vorausgehender <i>wenn</i>-Satz kann im Hauptsatz durch <i>dann</i> auf der ersten Position im Hauptsatz wiederaufgenommen werden.<br>
+	<b>Beispiel:</b><br>
+	<i><b>Wenn</b> ich Zeit <b>habe</b>, <b>(dann) komme</b> ich.</i><br>
+    <i>Indem sie die Messung <b>wiederholt</b>, <b>prüft</b> die Forscherin das Ergebnis.</i>
+</p>
+</div>
+
+<p class="grammatikerklaerung">
+    Quelle: Grammatik aktiv B2–C1, Kapitel 62–66, S. 164–172. Überarbeitet mit ChatGPT.
+</p>
+
+</main>
+ </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        scormStarten();
+    });
+</script>
+
+</body>
+</html>

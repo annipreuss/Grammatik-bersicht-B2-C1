@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scorm.js" defer></script>
+    <script src="aufgabenkarussell.js" defer></script>
+    <script src="aufgaben_adverbialsaetze.js" defer></script>
+
+    <title>Aufgaben zu Adverbialsätzen</title>
+</head>
+<body>
+    <div class="seitenkarte">
+        <main>
+            <div class="aufgabenkarussell" data-aufgabenkarussell>
+                <header>
+                    <h1>Aufgaben zu Adverbialsätzen</h1>
+                </header>
+
+                <div class="buttonfuerlinks">
+                    <a href="adverbialsaetze.html"
+                       class="linkbutton"
+                       data-scorm-ziel="ERKLAERUNG">
+                        Zurück zur Grammatikerklärung
+                    </a>
+                </div>
+
+                <div class="aufgabennavigation">
+                    <button type="button" data-aufgabenrichtung="-1"
+                            aria-label="Vorherige Aufgabe">
+                        ← Zurück
+                    </button>
+
+                    <span class="aufgabenstand" data-aufgabenstand></span>
+
+                    <button type="button" data-aufgabenrichtung="1"
+                            aria-label="Nächste Aufgabe">
+                        Weiter →
+                    </button>
+                </div>
+
+                <div data-aufgabenkarten>
+                   
+				<!--  Aufgabe 1 -->
+				<section class="aufgabenkarte" id="B2_1">
+					<h2>Kausale und konzessive Nebensätze (1)</h2>
+
+					<p><em>Ergänzen Sie die passenden Konnektoren aus dem Schüttelkasten.</em></p>
+					<p class="verbkasten">obwohl · weil · da · obwohl · da</p>
+
+					<div class="lueckentext">
+						<p><b>A</b> Warum willst du denn heute schon wieder ausgehen?</p>
+
+						<p><b>B</b>
+							<input type="text" data-loesung="Weil">
+							es einen tollen Fantasy-Film gibt.
+						</p>
+
+						<p><b>A</b> Dann komme ich auch mit,
+							<input type="text" data-loesung="obwohl">
+							ich eigentlich arbeiten müsste.
+						</p>
+
+						<p><b>B</b> Ach übertreib nicht.
+							<input type="text" data-loesung="Da">
+							die Prüfungen erst Ende Februar sind, können wir doch jetzt noch
+							ein bisschen was machen.
+						</p>
+
+						<p><b>A</b> O.k., sollen wir Tina und Clara fragen, ob sie mitkommen?</p>
+
+						<p><b>B</b> Ja, können wir,
+							<input type="text" data-loesung="obwohl">
+							ich gerne mal wieder mit dir alleine was machen würde.
+						</p>
+
+						<p><b>A</b> Ich auch. Aber es wäre praktisch,
+							<input type="text" data-loesung="da|weil">
+							Tine ein Auto hat.
+						</p>
+					</div>
+				</section>
+
+
+				<!-- Aufgabe 2 -->
+				<section class="aufgabenkarte" id="B2_2" hidden>
+					<h2>Konditionale und adversative Nebensätze (1) </h2>
+
+					<p><em>Welche Kombination passt? Schreiben Sie die Sätze.</em></p>
+					<p class="verbkasten">nur wenn · außer wenn · auch wenn · nur wenn</p>
+
+					<ol class="lueckentext" start="2">
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Es regnet und stürmt. Ich gehe jeden Tag spazieren.
+						(Regen und Sturm mag ich nicht.)<br>
+						<u>Außer wenn es regnet und stürmt</u>, gehe ich jeden Tag spazieren.
+						<li>
+							Es ist richtig heiß. Ich gehe ins Schwimmbad. (Sonst habe ich keine Lust.)<br>
+							<input type="text" data-loesung="Nur wenn es richtig heiß ist">,
+							gehe ich ins Schwimmbad.
+						</li>
+						<li>
+							Das Wetter an der Nordsee ist nicht immer schön. Ich fahre gerne an die
+							Nordsee. (Das schlechte Wetter macht mir nichts aus.)<br>
+							<input type="text" data-loesung="Auch wenn das Wetter an der Nordsee nicht immer schön ist">,
+							fahre ich gerne an die Nordsee.
+						</li>
+						<li>
+							Das Wetter ist stabil. Man sollte eine Bergtour in den Alpen machen.
+							(Sonst ist es gefährlich.)<br>
+							<input type="text" data-loesung="Nur wenn das Wetter stabil ist">,
+							sollte man eine Bergtour in den Alpen machen.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 3 -->
+				<section class="aufgabenkarte" id="B2_3" hidden>
+					<h2>Konsekutive Nebensätze (1)</h2>
+
+					<p><em>Schreiben Sie konsekutive Nebensätze mit <b>sodass</b>.</em></p>
+
+					<ol class="lueckentext" start="2">
+					
+				<p class="beispielsatz">
+						<b>Beispiel:</b> Der Akku von meinem Handy ist leer.
+						Die Konsequenz: Ich kann meine Nachrichten nicht lesen.<br>
+						Der Akku von meinem Handy ist leer,
+						<u>sodass ich meine Nachrichten nicht lesen kann</u>.
+					</p>
+					
+						<li>
+							Ich warte auf eine wichtige Nachricht von einem Kollegen.
+							Die Konsequenz: Ich bin sehr unruhig.<br>
+							Ich warte auf eine wichtige Nachricht von meinem Kollegen,
+							<input type="text" data-loesung="sodass ich sehr unruhig bin">.
+						</li>
+						<li>
+							Ich habe kein Ladekabel dabei. Die Konsequenz: Ich kann mein Handy nicht laden.<br>
+							Ich habe kein Ladekabel dabei,
+							<input type="text" data-loesung="sodass ich mein Handy nicht laden kann">.
+						</li>
+						<li>
+							Ich kenne die Handynummer von dem Kollegen nicht.
+							Die Konsequenz: Ich kann ihn auch nicht von einem anderen Handy aus anrufen.<br>
+							Ich kenne die Handynummer von dem Kollegen nicht,
+							<input type="text" data-loesung="sodass ich ihn auch nicht von einem anderen Handy aus anrufen kann|sodass ich ihn auch von einem anderen Handy aus nicht anrufen kann">.
+						</li>
+						<li>
+							Ich antworte dem Kollegen nicht. Die Konsequenz: Er wird bestimmt ärgerlich werden.<br>
+							Ich antworte dem Kollegen nicht,
+							<input type="text" data-loesung="sodass er bestimmt ärgerlich werden wird">.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 4 -->
+				<section class="aufgabenkarte" id="B2_4" hidden>
+					<h2>Konsekutive Nebensätze (2) </h2>
+
+					<p>
+						<em>Hat <b>dass</b> konsekutive Bedeutung? Ergänzen Sie nach jedem Satz
+						„konsekutiv“ oder „nicht konsekutiv“.</em>
+					</p>
+
+					<ol class="lueckentext" start="2">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Er ist so fleißig, dass er sein Studium eher
+						abschließen kann. → <u>konsekutiv</u>
+					</p>
+					
+						<li>
+							Sie ist so intelligent, dass ihr das Lernen keine Mühe macht. →
+							<input type="text" data-loesung="konsekutiv">
+						</li>
+						<li>
+							Er bereitet sich so gut wie möglich vor und hofft, dass er besteht. →
+							<input type="text" data-loesung="nicht konsekutiv">
+						</li>
+						<li>
+							Sie interessiert sich so für das Projekt, dass sie in den Semesterferien
+							freiwillig ein Praktikum dort macht. →
+							<input type="text" data-loesung="konsekutiv">
+						</li>
+						<li>
+							Er freut sich so, dass er die Klausur bestanden hat. →
+							<input type="text" data-loesung="nicht konsekutiv">
+						</li>
+						<li>
+							Sie arbeitet so schnell und möchte nicht, dass man ihr hilft. →
+							<input type="text" data-loesung="nicht konsekutiv">
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 5 -->
+				<section class="aufgabenkarte" id="B2_5" hidden>
+					<h2>Modale Nebensätze (1) </h2>
+
+					<p>
+						<em>Schreiben Sie die Sätze 2 und 3 mit <b>indem</b>
+						und die Sätze 4 bis 6 mit <b>dadurch dass</b>.</em>
+					</p>
+
+					<ol class="lueckentext" start="2">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> Wodurch können wir die Umwelt schonen?
+						(jeder von uns · weniger Auto · fahren)<br>
+						Wir können die Umwelt schonen, <u>indem jeder von uns weniger Auto fährt</u>.
+					</p>
+					
+						<li>
+							Wie können wir den Energieverbrauch senken?
+							(wir · benutzen · moderne, energiesparende Geräte)<br>
+							Wir können den Energieverbrauch senken,
+							<input type="text" data-loesung="indem wir moderne, energiesparende Geräte benutzen|indem wir moderne, energiesparende Geräte nutzen">.
+						</li>
+						<li>
+							Wodurch kann man einen Teil der Stromkosten einsparen?
+							(man · Geräte · nicht · auf Standby stehen lassen)<br>
+							Man kann einen nicht unerheblichen Teil der Stromkosten einsparen,
+							<input type="text" data-loesung="indem man Geräte nicht auf Standby stehen lässt">.
+						</li>
+						<li>
+							Wodurch kann man fossile Brennstoffe vermeiden?
+							(man · Solarenergie · nutzen)<br>
+							Man kann fossile Brennstoffe vermeiden,
+							<input type="text" data-loesung="dadurch dass man Solarenergie nutzt">.
+						</li>
+						<li>
+							Wie können Wissenschaftler/innen einen Beitrag zum Umweltschutz leisten?
+							(sie · energiesparende Technologien · entwickeln)<br>
+							Wissenschaftler/innen können einen wichtigen Beitrag zum Umweltschutz leisten,
+							<input type="text" data-loesung="dadurch dass sie energiesparende Technologien entwickeln">.
+						</li>
+						<li>
+							Wie können wir alle zum Umweltschutz beitragen?
+							(wir alle · sich politisch dafür engagieren)<br>
+							Wir alle können zum Umweltschutz beitragen,
+							<input type="text" data-loesung="dadurch dass wir uns alle politisch dafür engagieren">.
+						</li>
+					</ol>
+				</section>
+
+
+				<!-- Aufgabe 6 -->
+				<section class="aufgabenkarte" id="B2_6" hidden>
+					<h2>Temporale Nebensätze (1)</h2>
+
+					<p><em>Bilden Sie Sätze. Verwenden Sie den richtigen temporalen Nebensatzkonnektor.</em></p>
+
+					<ol class="lueckentext" start="2">
+					
+					<p class="beispielsatz">
+						<b>Beispiel:</b> 1. Frühstück – 2. duschen (Aktion 1 – Aktion 2)<br>
+						<u>Nachdem ich gefrühstückt habe</u>, dusche ich.
+					</p>
+					
+						<li>
+							1. schlafen gehen – 2. Zähne putzen (Aktion 2 – Aktion 1)<br>
+							<input type="text" data-loesung="Bevor ich schlafen gehe|Ehe ich schlafen gehe">,
+							putze ich mir die Zähne.
+						</li>
+						<li>
+							bügeln – Radio hören (zwei parallele Aktionen)<br>
+							<input type="text" data-loesung="Während ich bügle|Während ich bügele">,
+							höre ich Radio.
+						</li>
+						<li>
+							U-Bahn fahren – immer Zeitung lesen (Routine)<br>
+							<input type="text" data-loesung="Wenn ich U-Bahn fahre">,
+							lese ich Zeitung.
+						</li>
+						<li>
+							der Zug kommt an – Zeitung lesen (Ende einer Aktion)<br>
+							<input type="text" data-loesung="Bis der Zug ankommt">,
+							lese ich Zeitung.
+						</li>
+						<li>
+							im Büro ankommen – E-Mails checken (Anfang der Aktion)<br>
+							<input type="text" data-loesung="Sobald ich im Büro ankomme|Sowie ich im Büro ankomme">,
+							checke ich die E-Mails.
+						</li>
+						<li>
+							ich habe studiert – ich habe einen guten Job
+							(Beginn in der Vergangenheit, jetzt noch)<br>
+							<input type="text" data-loesung="Seit ich studiert habe|Seitdem ich studiert habe">,
+							habe ich einen guten Job.
+						</li>
+					</ol>
+				</section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

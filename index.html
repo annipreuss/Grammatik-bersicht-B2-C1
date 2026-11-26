@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carousel">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Grammatik B2-C1</title>
+</head>
+<body>
+	<div class="seitenkarte">
+
+  <header>
+    <h1>Deutsche Grammatik für B2-C1</h1>
+  </header>
+  <main>
+    <section aria-labelledby="suche-titel">
+      <h2 id="suche-titel">Welches Grammatikthema möchten Sie üben?</h2>
+
+      <input
+        type="search"
+        id="themensuche"
+		aria-labelledby="suche-titel"
+        placeholder="Zum Beispiel: Passiv"
+      >
+	  <ul id="suchergebnisse" hidden></ul>
+	  <p id="suchstatus" role="status"></p>
+    </section>
+
+    <section class="bilder">
+	<div class="carousel" data-carousel>
+	
+	<ul data-slides>
+		<li class="slide"
+		data-active
+		data-thema="Vorgangspassiv"
+		data-suchbegriffe="Passiv Vorgangspassiv PartizipII Partizip2  ">
+		
+		<a href="vorgangspassiv.html"
+		class="themenvorschau"
+		aria-label="Grammatikseite öffnen">
+		<img src="./bilder/prototyp1.jpg" alt="Vorgangspassiv">
+		<span class="play-symbol" aria-hidden="true">▶</span>
+		</a>
+		</li>
+		
+		<li class="slide"
+		data-thema="Adverbialsätze"
+		data-suchbegriffe="Adverb Nebensatz Konzessiv Kausal Adversiv Konditional Temporal Adverbial Adverbialsatz Adverbialsätze">
+		
+		<a href="adverbialsaetze.html"
+		class="themenvorschau"
+		aria-label="Grammatikseite öffnen">
+		<img src="./bilder/prototyp2.jpg" alt="Adverbialsätze">
+		<span class="play-symbol" aria-hidden="true">▶</span>
+		</a>
+		</li>
+		
+		<li class="slide"
+		data-thema="Adjektivdeklination"
+		data-suchbegriffe="Adjektive Adjektiv Deklination Adjektivdeklination Signalendung">
+		
+		<a href="adjektivdeklination.html"
+		class="themenvorschau"
+		aria-label="Grammatikseite öffnen">
+		<img src="./bilder/prototyp3.jpg" alt="Adjektivdeklination">
+		<span class="play-symbol" aria-hidden="true">▶</span>
+		</a>
+		</li>
+		
+		<li class="slide"
+		data-thema="Partizipialattribute"
+		data-suchbegriffe="Partizip Partizip1 PartizipI PartizipII Partizip2 Partizipien Attribut Attribute Adjektiv Deklination">
+		
+		<a href="partizipialattribut.html"
+		class="themenvorschau"
+		aria-label="Grammatikseite öffnen">
+		<img src="./bilder/prototyp4.jpg" alt="Partizipialattribute">
+		<span class="play-symbol" aria-hidden="true">▶</span>
+		</a>
+		</li>
+	</ul>
+	
+			<button class="button-prev" data-carousel-button="prev">
+			&#8592;
+		</button>
+		<button class="button-next" data-carousel-button="next">
+			&#x2192;
+		</button>
+	</div>
+    </section>
+  </main>
+  </div>
+</body>
+</html>
