@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nominalisierung</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scorm.js" defer></script>
+    <script src="erklaervideo.js" defer></script>
+</head>
+
+<body>
+    <div class="seitenkarte">
+        <header>
+            <h1>Nominalisierung</h1>
+        </header>
+
+        <main>
+            <div class="buttonfuerlinks">
+                <a href="index.html"
+                   class="linkbutton"
+                   target="_blank"
+                   rel="noopener">
+                    &#x2190; Zur Grammatikübersicht
+                </a>
+
+                <a href="aufgaben_nominalisierungb2.html"
+                   class="linkbutton">
+                    Aufgaben für B2
+                </a>
+
+                <a href="aufgaben_nominalisierungc1.html"
+                   class="linkbutton">
+                    Aufgaben für C1
+                </a>
+            </div>
+
+            <div class="erklaervideo">
+                <button class="videovorschau"
+                        id="video-start"
+                        type="button"
+                        aria-label="Video starten">
+                    <img src="./bilder/prototyp5.jpg" alt="">
+                    <span class="play-symbol" aria-hidden="true">▶</span>
+                </button>
+
+                <img id="video-platzhalter"
+                     class="video-gif"
+                     data-src="./bilder/platzhalter.gif"
+                     alt="Platzhalter für Video"
+                     hidden>
+            </div>
+
+            <div class="unterueberschrift">
+                <h1 id="nominalisierung-adverbialsaetze">
+                    Übersicht zur Nominalisierung von adverbialen Nebensätzen
+                </h1>
+            </div>
+
+            <div class="satzanalyse-scroll">
+                <table class="grammatiktabelle"
+                       aria-labelledby="nominalisierung-adverbialsaetze">
+                    <thead>
+                        <tr>
+                            <th scope="col">Bedeutung</th>
+                            <th scope="col">Präposition</th>
+                            <th scope="col">
+                                Konjunktion<br>
+                                (Konnektor mit Nebensatz)
+                            </th>
+                            <th scope="col">
+                                Satzverbindendes Adverb / Ausdruck im Hauptsatz<br>
+                                (Pos. 1 oder 3)
+                            </th>
+                            <th scope="col">
+                                Konnektor mit Hauptsatz<br>
+                                (Pos. 0)
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- Temporal -->
+                    <tbody>
+                        <tr>
+                            <th colspan="5" scope="rowgroup" class="hervorgehoben">
+                                Temporal (Zeit)
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Zwei parallele Aktivitäten</th>
+                            <td>während + G</td>
+                            <td>während</td>
+                            <td>währenddessen, gleichzeitig</td>
+                            <td rowspan="7"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Reihenfolge:<br>
+                                Aktion 1 – Aktion 2
+                            </th>
+                            <td>nach + D</td>
+                            <td>nachdem</td>
+                            <td>danach, nachher</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Reihenfolge:<br>
+                                Aktion 2 – Aktion 1
+                            </th>
+                            <td>vor + D</td>
+                            <td>bevor</td>
+                            <td>vorher, davor, zuvor</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Ende einer Phase / Aktion</th>
+                            <td>bis + zu + D</td>
+                            <td>bis</td>
+                            <td>bis dann</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Beginn in der Vergangenheit, jetzt noch
+                            </th>
+                            <td>seit + D</td>
+                            <td>seit, seitdem</td>
+                            <td>seitdem</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Routine / mehrmals oder einmal passiert
+                            </th>
+                            <td>bei + D</td>
+                            <td>wenn</td>
+                            <td>dabei, jedes Mal</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Einmal passiert in der Vergangenheit
+                            </th>
+                            <td>bei + D</td>
+                            <td>als</td>
+                            <td>da</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Kausal -->
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Kausal<br>
+                                (Grund)
+                            </th>
+                            <td>
+                                wegen + G<br>
+                                aufgrund + G<br>
+                                aus + D<br>
+                                vor + D<br>
+                                <i>auch:</i><br>
+                                infolge + G, angesichts + G, dank + G,
+                                anlässlich + G, kraft + G, mangels + G
+                            </td>
+                            <td>
+                                weil<br>
+                                da<br>
+                                zumal
+                            </td>
+                            <td>nämlich</td>
+                            <td>denn</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Konzessiv -->
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" scope="rowgroup" class="hervorgehoben">
+                                Konzessiv<br>
+                                (Gegenargument)
+                            </th>
+                            <td rowspan="2">
+                                trotz + G<br>
+                                ungeachtet + G
+                            </td>
+                            <td rowspan="2">
+                                obwohl<br>
+                                <i>auch:</i><br>
+                                auch wenn<br>
+                                wobei<br>
+                                ungeachtet dessen, dass
+                            </td>
+                            <td>
+                                dennoch<br>
+                                trotzdem, allerdings
+                            </td>
+                            <td>aber</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">zwar … aber</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <!-- Konsekutiv -->
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Konsekutiv<br>
+                                (Konsequenz / Folge)
+                            </th>
+                            <td>infolge + G</td>
+                            <td>
+                                weshalb<br>
+                                weswegen<br>
+                                sodass<br>
+                                <i>auch:</i><br>
+                                so …, dass<br>
+                                dermaßen …, dass<br>
+                                derart …, dass
+                            </td>
+                            <td>
+                                deshalb, deswegen, darum, daher, also,
+                                infolgedessen, folglich, aus diesem Grund,
+                                somit, demnach
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <!-- Adversativ -->
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Adversativ<br>
+                                (Gegensatz)
+                            </th>
+                            <td>im Gegensatz zu</td>
+                            <td>
+                                während<br>
+                                wo(hin)gegen
+                            </td>
+                            <td>
+                                dagegen<br>
+                                demgegenüber<br>
+                                im Gegensatz dazu
+                            </td>
+                            <td>doch, aber</td>
+                        </tr>
+
+                        <!-- Konditional -->
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Konditional<br>
+                                (Bedingung)
+                            </th>
+                            <td>
+                                bei + D<br>
+                                im Falle + G
+                            </td>
+                            <td>
+                                wenn<br>
+                                falls, sofern<br>
+                                <i>auch:</i><br>
+                                nur wenn<br>
+                                sogar wenn<br>
+                                außer wenn<br>
+                                sofern<br>
+                                gesetzt den Fall, dass<br>
+                                vorausgesetzt, dass
+                            </td>
+                            <td>sonst, andernfalls</td>
+                            <td>
+                                vorausgesetzt<br>
+                                es sei denn
+                            </td>
+                        </tr>
+
+                        <!-- Final -->
+                        <tr>
+                            <th scope="row" class="hervorgehoben">
+                                Final<br>
+                                (Ziel, Zweck)
+                            </th>
+                            <td>
+                                zu + D<br>
+                                zwecks + G<br>
+                                für + A
+                            </td>
+                            <td>
+                                damit<br>
+                                um … zu
+                            </td>
+                            <td>
+                                dazu<br><br>
+                                dafür
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Modal -->
+                    <tbody>
+                        <tr>
+                            <th colspan="5" scope="rowgroup" class="hervorgehoben">Modal</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Art und Weise, Methode</th>
+                            <td>
+                                mit + D<br>
+                                mittels + G<br>
+                                mithilfe + G
+                            </td>
+                            <td>indem</td>
+                            <td>
+                                damit, dadurch<br>
+                                so<br>
+                                auf diese Weise
+                            </td>
+                            <td rowspan="5"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Mittel, Instrument</th>
+                            <td>durch + A</td>
+                            <td>
+                                dadurch dass<br>
+                                wodurch
+                            </td>
+                            <td>dadurch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Alternative</th>
+                            <td>(an)statt + G</td>
+                            <td>
+                                (an)statt dass<br>
+                                (an)statt … zu
+                            </td>
+                            <td>stattdessen</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Fehlende Handlung</th>
+                            <td>ohne + A</td>
+                            <td>
+                                ohne dass<br>
+                                ohne … zu
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="hervorgehoben">Vergleich</th>
+                            <td>nach, gemäß, entsprechend</td>
+                            <td>wie</td>
+                            <td>(genau)so</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            scormStarten();
+        });
+    </script>
+</body>
+</html>
