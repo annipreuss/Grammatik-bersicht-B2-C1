@@ -90,4 +90,40 @@ suchfeld.addEventListener("input", () => {
     suchstatus.textContent = treffer.length === 0
         ? "Kein passendes Thema gefunden."
         : `${treffer.length} Themen gefunden.`;
+
+function suchtrefferMitPfeilenAuswaehlen(event) {
+    if (event.key !== "ArrowDown" && event.key !== "ArrowUp") {
+        return;
+    }
+
+    if (ergebnisse.hidden) {
+        return;
+    }
+
+    const links = [...ergebnisse.querySelectorAll("a")];
+
+    if (links.length === 0) {
+        return;
+    }
+
+    event.preventDefault();
+
+    const aktuellerIndex = links.indexOf(document.activeElement);
+    let naechsterIndex;
+
+    if (event.key === "ArrowDown") {
+        naechsterIndex = aktuellerIndex === -1
+            ? 0
+            : (aktuellerIndex + 1) % links.length;
+    } else {
+        naechsterIndex = aktuellerIndex === -1
+            ? links.length - 1
+            : (aktuellerIndex - 1 + links.length) % links.length;
+    }
+
+    links[naechsterIndex].focus();
+}
+
+suchfeld.addEventListener("keydown", suchtrefferMitPfeilenAuswaehlen);
+ergebnisse.addEventListener("keydown", suchtrefferMitPfeilenAuswaehlen);
 });
