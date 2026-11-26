@@ -121,7 +121,7 @@ function suchtrefferMitPfeilenAuswaehlen(event) {
             : (aktuellerIndex - 1 + links.length) % links.length;
     }
 
-    links[naechsterIndex].focus();
+	links[naechsterIndex].focus({ preventScroll: true });
 }
 
 suchfeld.addEventListener("keydown", suchtrefferMitPfeilenAuswaehlen);
