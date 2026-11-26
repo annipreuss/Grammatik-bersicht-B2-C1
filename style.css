@@ -215,6 +215,12 @@ section[aria-labelledby="suche-titel"] {
     background: #d8d7e8;
 }
 
+#suchergebnisse a:focus {
+    background-color: #c6d8d9;
+    outline: 2px solid #273a36;
+    outline-offset: 2px;
+}
+
 .buttonfuerlinks {
   display: flex;
   justify-content: center;
